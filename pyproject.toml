@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "smart-folder-organizer"
+version = "1.0.0"
+description = "Preview, organize, and undo folder cleanup using extension, category, or date rules."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "jellywong343-sys" }]
+dependencies = []
+keywords = ["python","cli","file-organization","automation","productivity"]
+
+[project.scripts]
+smart-organize = "smart_folder_organizer.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
